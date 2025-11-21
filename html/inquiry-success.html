@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiry Received - Elettronica</title>
+    <style>
+        /* SAME EXACT CSS AS contact.html */
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:Arial, sans-serif; background:#f4f6f9; color:#333; line-height:1.6; }
+        header { background:#0f3460; padding:1.5rem 0; text-align:center; position:sticky; top:0; z-index:100; }
+        .logo { font-size:2.2rem; font-weight:bold; color:#1abc9c; }
+        nav ul { list-style:none; display:flex; justify-content:center; flex-wrap:wrap; gap:1.5rem; margin-top:1rem; }
+        nav a { color:white; text-decoration:none; padding:0.7rem 1.3rem; border-radius:30px; transition:0.3s; }
+        nav a:hover, nav a.active { background:#1abc9c; }
+        .container { max-width:900px; margin:3rem auto; padding:2rem; text-align:center; }
+        .summary-box { background:white; padding:3rem; border-radius:20px; box-shadow:0 15px 40px rgba(0,0,0,0.15); }
+        .summary-box h2 { color:#0f3460; margin-bottom:2rem; }
+        .summary-box p { font-size:1.2rem; margin:1rem 0; }
+        .btn { display:inline-block; background:#1abc9c; color:white; padding:1rem 2.5rem; margin:1.5rem; text-decoration:none; border-radius:50px; transition:0.3s; }
+        .btn:hover { background:#16a085; transform:scale(1.05); }
+        footer { background:#0f3460; color:white; text-align:center; padding:2rem; margin-top:5rem; }
+        #backToTop { position:fixed; bottom:30px; right:30px; background:#1abc9c; color:white; width:55px; height:55px; border-radius:50%; border:none; font-size:1.8rem; cursor:pointer; box-shadow:0 5px 15px rgba(0,0,0,0.3); display:none; z-index:999; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">TechTrend Gadgets</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 style="color:#1abc9c; font-size:3rem;">Thank You!</h1>
+        <p>Your inquiry has been received. We will reply within 24 hours.</p>
+
+        <div class="summary-box">
+            <h2>Your Submitted Details</h2>
+            <p><strong>Name:</strong> <span id="dispName">-</span></p>
+            <p><strong>Email:</strong> <span id="dispEmail">-</span></p>
+            <p><strong>Phone:</strong> <span id="dispPhone">-</span></p>
+            <p><strong>Subject:</strong> <span id="dispSubject">-</span></p>
+            <p><strong>Message:</strong><br><span id="dispMessage">-</span></p>
+        </div>
+
+        <a href="contact.html" class="btn">Back to Contact</a>
+        <a href="index.html" class="btn">Home</a>
+    </div>
+
+    <footer><p>© 2025 Elettronica</p></footer>
+    <button id="backToTop">↑</button>
+
+    <script>
+        // SAME JAVASCRIPT AS ABOVE (copy-paste the entire <script> from contact.html)
+        const data = JSON.parse(localStorage.getItem('latestInquiry') || '{}');
+        document.getElementById('dispName').textContent = data.name || '-';
+        document.getElementById('dispEmail').textContent = data.email || '-';
+        document.getElementById('dispPhone').textContent = data.phone || '-';
+        document.getElementById('dispSubject').textContent = data.subject || '-';
+        document.getElementById('dispMessage').textContent = data.message || '-';
+
+        const btn = document.getElementById('backToTop');
+        window.onscroll = () => { btn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? 'block' : 'none'; };
+    </script>
+</body>
+</html>

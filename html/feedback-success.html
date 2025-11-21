@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Received - Elettronica</title>
+    <style>
+        /* SAME STYLE THEME */
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:Arial, sans-serif; background:#f4f6f9; }
+        header { background:#16213e; padding:1.5rem 0; text-align:center; }
+        .logo { font-size:2.2rem; font-weight:bold; color:#ff5722; }
+        nav ul { list-style:none; display:flex; justify-content:center; gap:1.5rem; margin-top:1rem; }
+        nav a { color:white; text-decoration:none; padding:0.7rem 1.3rem; border-radius:30px; }
+        nav a:hover { background:#ff5722; }
+        .container { max-width:900px; margin:3rem auto; padding:2rem; text-align:center; }
+        .summary-box { background:white; padding:3rem; border-radius:20px; box-shadow:0 15px 40px rgba(0,0,0,0.15); }
+        .btn { display:inline-block; background:#ff5722; color:white; padding:1rem 2.5rem; margin:1.5rem; text-decoration:none; border-radius:50px; }
+        .btn:hover { background:#e64a19; }
+        footer { background:#16213e; color:white; text-align:center; padding:2rem; margin-top:5rem; }
+        #backToTop { position:fixed; bottom:30px; right:30px; background:#ff5722; color:white; width:55px; height:55px; border-radius:50%; border:none; font-size:1.8rem; cursor:pointer; display:none; z-index:999; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Elettronica</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 style="color:#ff5722; font-size:3rem;">Thank You!</h1>
+        <p>Your feedback has been recorded.</p>
+
+        <div class="summary-box">
+            <p><strong>Name:</strong> <span id="fName">-</span></p>
+            <p><strong>Email:</strong> <span id="fEmail">-</span></p>
+            <p><strong>Type:</strong> <span id="fType">-</span></p>
+            <p><strong>Rating:</strong> <span id="fRating">-</span> Stars</p>
+            <p><strong>Message:</strong><br><span id="fMessage">-</span></p>
+        </div>
+
+        <a href="feedback.html" class="btn">Submit Another</a>
+        <a href="index.html" class="btn">Home</a>
+    </div>
+
+    <footer><p>© 2025 Elettronica</p></footer>
+    <button id="backToTop">↑</button>
+
+    <script>
+        const data = JSON.parse(localStorage.getItem('latestFeedback') || '{}');
+        document.getElementById('fName').textContent = data.name || '-';
+        document.getElementById('fEmail').textContent = data.email || '-';
+        document.getElementById('fType').textContent = data.type || '-';
+        document.getElementById('fRating').textContent = data.rating || '-';
+        document.getElementById('fMessage').textContent = data.message || '-';
+
+        const btn = document.getElementById('backToTop');
+        window.onscroll = () => { btn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? 'block' : 'none'; };
+    </script>
+</body>
+</html>
