@@ -157,3 +157,22 @@ particlesJS('particles-js',
     }
 
 );
+// 回到頂部按鈕功能
+const backToTopButton = document.getElementById('back-to-top');
+
+// 滾動事件
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {           // 滾過 300px 就顯示
+        backToTopButton.classList.add('show');
+    } else {
+        backToTopButton.classList.remove('show');
+    }
+});
+
+// 點擊平滑回到頂部
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'                // 平滑滾動
+    });
+});
