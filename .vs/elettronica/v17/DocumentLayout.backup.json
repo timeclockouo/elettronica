@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "G:\\webdesing\\elettronica\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\webdesing\\elettronica\\html\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:html\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\webdesing\\elettronica\\html\\template.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:html\\template.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\webdesing\\elettronica\\css\\nav.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:css\\nav.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\webdesing\\elettronica\\js\\nav.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\nav.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\webdesing\\elettronica\\js\\loadnav.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\loadnav.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
@@ -14,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,13 +38,65 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "nav.css",
+              "DocumentMoniker": "G:\\webdesing\\elettronica\\css\\nav.css",
+              "RelativeDocumentMoniker": "css\\nav.css",
+              "ToolTip": "G:\\webdesing\\elettronica\\css\\nav.css",
+              "RelativeToolTip": "css\\nav.css",
+              "ViewState": "AgIAAFUBAAAAAAAAAAAswHEBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-22T02:39:39.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "nav.js",
+              "DocumentMoniker": "G:\\webdesing\\elettronica\\js\\nav.js",
+              "RelativeDocumentMoniker": "js\\nav.js",
+              "ToolTip": "G:\\webdesing\\elettronica\\js\\nav.js",
+              "RelativeToolTip": "js\\nav.js",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAwLEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-22T02:38:05.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "contact.html",
+              "DocumentMoniker": "G:\\webdesing\\elettronica\\html\\contact.html",
+              "RelativeDocumentMoniker": "html\\contact.html",
+              "ToolTip": "G:\\webdesing\\elettronica\\html\\contact.html",
+              "RelativeToolTip": "html\\contact.html",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAAAIgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-22T02:37:19.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "template.html",
+              "DocumentMoniker": "G:\\webdesing\\elettronica\\html\\template.html",
+              "RelativeDocumentMoniker": "html\\template.html",
+              "ToolTip": "G:\\webdesing\\elettronica\\html\\template.html",
+              "RelativeToolTip": "html\\template.html",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAswHsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-22T02:34:58.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "loadnav.js",
               "DocumentMoniker": "G:\\webdesing\\elettronica\\js\\loadnav.js",
               "RelativeDocumentMoniker": "js\\loadnav.js",
               "ToolTip": "G:\\webdesing\\elettronica\\js\\loadnav.js",
               "RelativeToolTip": "js\\loadnav.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-11-22T02:30:49.028Z",
               "EditorCaption": ""
